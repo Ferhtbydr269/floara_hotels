@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Flora İznik Hotels & Suites - Göl kenarında huzurlu butik otel. Oda özellikleri, bahçe ve oda görselleri, iletişim ve konum bilgileri.">
+  <title>Otel Hakkında | Flora İznik Hotels & Suites</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Flora İznik Hotels & Suites Logo">
+  </header>
+  <main>
+    <h1 style="text-align:center; margin-top:1.2em; font-size:2.1em; font-family:'Montserrat',sans-serif; letter-spacing:0.04em;">Flora İznik Hotels & Suites</h1>
+    <section class="features-section" id="otel-ozellikleri">
+      <div class="features-title">🛏️ Otel Özellikleri</div>
+      <div class="features-grid more-features" data-collapsed="true">
+        <div class="feature-card"><span class="icon">🛏️</span> Oda</div>
+        <div class="feature-card"><span class="icon">❄️</span> Klima</div>
+        <div class="feature-card"><span class="icon">🧹</span> Günlük kat hizmeti</div>
+        <div class="feature-card"><span class="icon">📞</span> Telefon</div>
+        <div class="feature-card"><span class="icon">🧴</span> Ücretsiz banyo/kozmetik ürünleri</div>
+        <div class="feature-card"><span class="icon">💇‍♀️</span> Saç kurutma makinesi</div>
+        <div class="feature-card"><span class="icon">🔥</span> Isıtma</div>
+        <div class="feature-card extra-feature" style="display:none"><span class="icon">🧺</span> Havlu</div>
+        <div class="feature-card extra-feature" style="display:none"><span class="icon">🥿</span> Terlik</div>
+      </div>
+      <span class="features-more" onclick="toggleFeatures(this)">Daha fazla göster</span>
+    </section>
+    <section class="features-section" id="genel">
+      <div class="features-title">🏨 Genel</div>
+      <div class="features-grid more-features" data-collapsed="true">
+        <div class="feature-card"><span class="icon">🌳</span> Bahçe</div>
+        <div class="feature-card"><span class="icon">🕑</span> 24 saat açık resepsiyon</div>
+        <div class="feature-card"><span class="icon">🚬</span> Sigara içmek için özel alanlar</div>
+        <div class="feature-card"><span class="icon">🏨</span> Hotel</div>
+        <div class="feature-card extra-feature" style="display:none"><span class="icon">🛋️</span> Suitler</div>
+        <div class="feature-card extra-feature" style="display:none"><span class="icon">👨‍👩‍👧‍👦</span> Aile Odaları</div>
+      </div>
+      <span class="features-more" onclick="toggleFeatures(this)">Daha fazla göster</span>
+    </section>
+    <section class="features-section">
+      <div class="features-title">🍽️ Yeme ve İçme</div>
+      <div class="features-grid">
+        <div class="feature-card"><span class="icon">🍽️</span> Restoran</div>
+        <div class="feature-card"><span class="icon">🥐</span> Kahvaltı salonu</div>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="features-title">💳 Ödeme</div>
+      <div class="features-grid">
+        <div class="feature-card"><span class="icon">💳</span> MasterCard</div>
+        <div class="feature-card"><span class="icon">💳</span> Visa</div>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="features-title">🐾 Evcil Hayvan</div>
+      <div class="features-grid">
+        <div class="feature-card"><span class="icon">🚫</span> Evcil hayvanlara izin verilmez</div>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="features-title">🎯 Aktivite</div>
+      <div class="features-grid">
+        <div class="feature-card"><span class="icon">📺</span> TV Odası</div>
+      </div>
+    </section>
+    <section>
+      <h2>Otel & Bahçe</h2>
+      <div class="slider" id="garden-slider">
+        <button class="slider-btn prev" onclick="slide('garden',-1)">❮</button>
+        <div class="slider-images">
+          <img src="images/zeytin-bahcesi-bursa-ana-resim-76230052.webp" alt="Bahçe 1" class="slider-img garden-slide">
+          <img src="images/flora-iznik-hotels-suites_b3c2dad0.jpg" alt="Bahçe 2" class="slider-img garden-slide">
+          <img src="images/floara.webp" alt="Bahçe 3" class="slider-img garden-slide">
+          <img src="images/flora_iznik_hotels___suites_30181.jpg" alt="Bahçe 4" class="slider-img garden-slide">
+          <img src="images/flora_iznik_hotels___suites_30174.jpg" alt="Bahçe 5" class="slider-img garden-slide">
+          <img src="images/flora_iznik_hotels___suites_30173.jpg" alt="Bahçe 6" class="slider-img garden-slide">
+          <img src="images/flora_iznik_hotels___suites_30172.jpg" alt="Bahçe 7" class="slider-img garden-slide">
+          <img src="images/flora_iznik_hotels___suites_30171.jpg" alt="Bahçe 8" class="slider-img garden-slide">
+          <img src="images/flora_iznik_hotels___suites_30170.jpg" alt="Bahçe 9" class="slider-img garden-slide">
+        </div>
+        <button class="slider-btn next" onclick="slide('garden',1)">❯</button>
+      </div>
+    </section>
+    <section>
+      <h2>Odalar</h2>
+      <div class="slider" id="room-slider">
+        <button class="slider-btn prev" onclick="slide('room',-1)">❮</button>
+        <div class="slider-images">
+          <img src="images/flora-iznik-suites-bursa-genel-39789286.webp" alt="Oda 1" class="slider-img room-slide">
+          <img src="images/flora_iznik_hotels___suites_30188.jpg" alt="Oda 2" class="slider-img room-slide">
+          <img src="images/flora_iznik_hotels___suites_30187.jpg" alt="Oda 3" class="slider-img room-slide">
+          <img src="images/flora_iznik_hotels___suites_30186.jpg" alt="Oda 4" class="slider-img room-slide">
+          <img src="images/flora_iznik_hotels___suites_30184.jpg" alt="Oda 5" class="slider-img room-slide">
+          <img src="images/flora_iznik_hotels___suites_30183.jpg" alt="Oda 6" class="slider-img room-slide">
+          <img src="images/flora_iznik_hotels___suites_30182.jpg" alt="Oda 7" class="slider-img room-slide">
+        </div>
+        <button class="slider-btn next" onclick="slide('room',1)">❯</button>
+      </div>
+    </section>
+    <section class="map-card">
+      <span class="icon">📍</span>
+      <a href="https://www.google.com/maps/dir//Selcuk+Mah.+Ds%C4%B1+Sokak+No:2,+Sel%C3%A7uk,+%C4%B0znik+Yeni%C5%9Fehir+Yolu+No:60,+16860+%C4%B0zni%CC%87k%2FBursa/@40.4061558,29.6202831,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14cb0a23eed65b4d:0x7a6a3e0eeb45f58f!2m2!1d29.702684!2d40.406185?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps'te Görüntüle</a>
+    </section>
+    <section class="contact-card">
+      <ul>
+        <li><span class="icon">📞</span> <b>Telefon:</b> <a href="tel:+905310000000">+90 531 000 00 00</a></li>
+        <li><span class="icon"><svg width="22" height="22" viewBox="0 0 32 32"><g><path fill="#25D366" d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.1 2.36 7.1L4 29l7.13-2.32A12.94 12.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.85-.58-5.41-1.58l-.39-.25-4.23 1.38 1.38-4.13-.25-.4A9.94 9.94 0 0 1 6 15c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.18.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.36-.01-.56-.01-.2 0-.52.07-.8.36-.28.28-1.06 1.04-1.06 2.54 0 1.5 1.09 2.95 1.24 3.16.15.21 2.15 3.29 5.22 4.48.73.31 1.3.5 1.75.64.74.24 1.41.21 1.94.13.59-.09 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"/></g></svg></span> <b>WhatsApp:</b> <a href="https://wa.me/905310000000" target="_blank">+90 531 000 00 00</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="https://instagram.com/floraotel" class="social-icon" target="_blank" title="Instagram"><svg width="22" height="22" viewBox="0 0 448 512"><path fill="#E4405F" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186c-39.5 0-71.5-32-71.5-71.5s32-71.5 71.5-71.5 71.5 32 71.5 71.5-32 71.5-71.5 71.5zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.1S388.6 1.7 353.3 0C317.6-1.7 130.4-1.7 94.7 0 59.4 1.7 28 9.9 2.7 36.2S1.7 123.4 0 158.7c-1.7 35.3-1.7 222.5 0 257.8 1.7 35.3 9.9 66.7 36.2 92.1s56.8 34.5 92.1 36.2c35.3 1.7 222.5 1.7 257.8 0 35.3-1.7 66.7-9.9 92.1-36.2s34.5-56.8 36.2-92.1c1.7-35.3 1.7-222.5 0-257.8z"/></svg></a>
+        <a href="mailto:floraiznik@gmail.com" class="social-icon" title="E-mail"><svg width="22" height="22" viewBox="0 0 512 512"><path fill="#4285F4" d="M502.3 190.8L327.4 338.7c-15.6 13.2-38.2 13.2-53.8 0L9.7 190.8C3.9 185.7 0 177.9 0 169.6V96c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v73.6c0 8.3-3.9 16.1-9.7 21.2z"/><path fill="#34A853" d="M502.3 190.8c5.8-5.1 9.7-12.9 9.7-21.2V96c0-26.5-21.5-48-48-48H48C21.5 48 0 69.5 0 96v73.6c0 8.3 3.9 16.1 9.7 21.2l174.9 147.9c15.6 13.2 38.2 13.2 53.8 0l174.9-147.9z"/><path fill="#FBBC05" d="M502.3 190.8L327.4 338.7c-15.6 13.2-38.2 13.2-53.8 0L9.7 190.8C3.9 185.7 0 177.9 0 169.6V96c0-26.5 21.5-48 48-48h416c26.5 0 48 21.5 48 48v73.6c0 8.3-3.9 16.1-9.7 21.2z"/></svg></a>
+      </div>
+    </section>
+  </main>
+  <a href="index.html" class="fixed-bottom-btn">Menüye Dön</a>
+  <button id="scrollTopBtn" title="Yukarı Çık">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html> 

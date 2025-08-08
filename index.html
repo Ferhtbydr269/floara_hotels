@@ -10,8 +10,88 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Flora İznik Hotels & Suites Logo">
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html" aria-label="Ana sayfa">
+        <img src="logo.png" alt="Flora İznik Hotels & Suites Logo">
+        <span class="brand-wordmark">Flora İznik</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="premium-nav" aria-label="Ana menü">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg>
+              <span>Ana Sayfa</span>
+            </a>
+          </li>
+          <li class="nav-item has-mega">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 11V7h10v4h2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6h2zm14 2H3a1 1 0 0 0-1 1v6h6v-4h8v4h6v-6a1 1 0 0 0-1-1z"/></svg>
+              <span>Odalar</span>
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg>
+            </button>
+            <div class="dropdown-panel mega" role="menu">
+              <div class="mega-col">
+                <div class="mega-title">Suitler</div>
+                <a href="otel.html#room-slider" class="mega-link">Deluxe Suite</a>
+                <a href="otel.html#room-slider" class="mega-link">Executive Suite</a>
+                <a href="otel.html#room-slider" class="mega-link">Lake View Suite</a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-title">Aile</div>
+                <a href="otel.html#room-slider" class="mega-link">Aile Odası</a>
+                <a href="otel.html#room-slider" class="mega-link">Bağlantılı Odalar</a>
+              </div>
+              <div class="mega-col highlight">
+                <div class="mega-title">Öne Çıkan</div>
+                <p class="mega-text">Göl manzaralı odalarda kahvaltı dahil ayrıcalıklı konaklama.</p>
+                <a class="btn-cta small" href="https://wa.me/905310000000" target="_blank">Rezervasyon</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3c-3.866 0-7 2.239-7 5c0 1.657 1.343 3 3 3h8c1.657 0 3-1.343 3-3c0-2.761-3.134-5-7-5zm-6 9v2a6 6 0 0 0 12 0v-2H6z"/></svg>
+              <span>Yeme & İçme</span>
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg>
+            </button>
+            <div class="dropdown-panel" role="menu">
+              <a href="#kahvalti" class="dropdown-link">Kahvaltılıklar</a>
+              <a href="#ana-yemekler" class="dropdown-link">Ana Yemekler</a>
+              <a href="#salatalar" class="dropdown-link">Salatalar</a>
+              <a href="#icecekler" class="dropdown-link">İçecekler</a>
+              <a href="#tatlilar" class="dropdown-link">Tatlılar</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l2.39 4.84L20 8l-4 3.9L17 18l-5-2.6L7 18l1-6.1L4 8l5.61-1.16z"/></svg>
+              <span>Deneyimler</span>
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg>
+            </button>
+            <div class="dropdown-panel" role="menu">
+              <a href="otel.html#garden-slider" class="dropdown-link">Bahçe & Doğa</a>
+              <a href="otel.html#genel" class="dropdown-link">Otel Genel</a>
+              <a href="otel.html#room-slider" class="dropdown-link">Odalar</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="otel.html#iletisim">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C11.85 21 3 12.15 3 1a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.19 2.47.57 3.58a1 1 0 0 1-.24 1.01z"/></svg>
+              <span>İletişim</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn-cta" href="https://wa.me/905310000000" target="_blank">Rezervasyon</a>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <div class="menu-header">
@@ -20,7 +100,7 @@
     </div>
     <div class="accordion">
       <!-- KAHVALTILIKLAR -->
-      <div class="accordion-item active">
+      <div class="accordion-item active" id="kahvalti">
         <div class="accordion-header">🍳 Kahvaltılıklar</div>
         <div class="accordion-content">
           <div class="menu-item">
@@ -52,7 +132,7 @@
         </div>
       </div>
       <!-- ARA SICAKLAR / BAŞLANGIÇLAR -->
-      <div class="accordion-item">
+      <div class="accordion-item" id="ara-sicaklar">
         <div class="accordion-header">🍽️ Ara Sıcaklar / Başlangıçlar</div>
         <div class="accordion-content">
           <div class="menu-item"><div class="menu-title">🥣 Mercimek Çorbası</div><div class="menu-price">80₺</div><img src="images/mercimek-corbasi.jpg" alt="Mercimek Çorbası" onerror="this.style.display='none'"></div>
@@ -65,7 +145,7 @@
         </div>
       </div>
       <!-- ANA YEMEKLER -->
-      <div class="accordion-item">
+      <div class="accordion-item" id="ana-yemekler">
         <div class="accordion-header">🍖 Ana Yemekler</div>
         <div class="accordion-content">
           <div class="menu-section">
@@ -105,7 +185,7 @@
         </div>
       </div>
       <!-- SALATALAR -->
-      <div class="accordion-item">
+      <div class="accordion-item" id="salatalar">
         <div class="accordion-header">🥗 Salatalar</div>
         <div class="accordion-content">
           <div class="menu-item"><div class="menu-title">🥗 Mevsim Salata</div><div class="menu-price">90₺</div><img src="images/mevsim-salata.jpg" alt="Mevsim Salata" onerror="this.style.display='none'"></div>
@@ -116,7 +196,7 @@
         </div>
       </div>
       <!-- İÇECEKLER -->
-      <div class="accordion-item">
+      <div class="accordion-item" id="icecekler">
         <div class="accordion-header">☕ İçecekler</div>
         <div class="accordion-content">
           <div class="menu-section">
@@ -140,7 +220,7 @@
         </div>
       </div>
       <!-- TATLILAR -->
-      <div class="accordion-item">
+      <div class="accordion-item" id="tatlilar">
         <div class="accordion-header">🍰 Tatlılar</div>
         <div class="accordion-content">
           <div class="menu-item"><div class="menu-title">🍚 Sütlaç</div><div class="menu-price">60₺</div><img src="images/sutlac.jpg" alt="Sütlaç" onerror="this.style.display='none'"></div>

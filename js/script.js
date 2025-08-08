@@ -62,4 +62,59 @@ function toggleFeatures(btn) {
   extras.forEach(el => el.style.display = collapsed ? '' : 'none');
   grid.setAttribute('data-collapsed', collapsed ? 'false' : 'true');
   btn.textContent = collapsed ? 'Daha az göster' : 'Daha fazla göster';
-} 
+}
+
+// Premium nav interactions
+(function(){
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.premium-nav');
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+  function closeAllDropdowns() {
+    document.querySelectorAll('.nav-item.open').forEach(el => el.classList.remove('open'));
+    dropdownToggles.forEach(btn => btn.setAttribute('aria-expanded', 'false'));
+  }
+
+  function toggleNav(open) {
+    if(!nav) return;
+    const isOpen = typeof open === 'boolean' ? open : !nav.classList.contains('open');
+    nav.classList.toggle('open', isOpen);
+    if(navToggle) navToggle.setAttribute('aria-expanded', String(isOpen));
+    if(!isOpen) closeAllDropdowns();
+  }
+
+  if(navToggle && nav) {
+    navToggle.addEventListener('click', () => toggleNav());
+  }
+
+  dropdownToggles.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const item = e.currentTarget.closest('.nav-item');
+      const willOpen = !item.classList.contains('open');
+      // close siblings
+      item.parentElement.querySelectorAll('.nav-item.open').forEach(sib => {
+        if(sib !== item) sib.classList.remove('open');
+      });
+      item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(willOpen));
+    });
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    const header = document.querySelector('.site-header');
+    if(!header) return;
+    if(!header.contains(e.target)) {
+      closeAllDropdowns();
+      if(nav && nav.classList.contains('open')) toggleNav(false);
+    }
+  });
+
+  // Close with ESC
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+      closeAllDropdowns();
+      toggleNav(false);
+    }
+  });
+})(); 

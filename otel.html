@@ -10,8 +10,88 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Flora İznik Hotels & Suites Logo">
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html" aria-label="Ana sayfa">
+        <img src="logo.png" alt="Flora İznik Hotels & Suites Logo">
+        <span class="brand-wordmark">Flora İznik</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü Aç/Kapat">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="premium-nav" aria-label="Ana menü">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3z"/></svg>
+              <span>Ana Sayfa</span>
+            </a>
+          </li>
+          <li class="nav-item has-mega">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 11V7h10v4h2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6h2zm14 2H3a1 1 0 0 0-1 1v6h6v-4h8v4h6v-6a1 1 0 0 0-1-1z"/></svg>
+              <span>Odalar</span>
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg>
+            </button>
+            <div class="dropdown-panel mega" role="menu">
+              <div class="mega-col">
+                <div class="mega-title">Suitler</div>
+                <a href="#room-slider" class="mega-link">Deluxe Suite</a>
+                <a href="#room-slider" class="mega-link">Executive Suite</a>
+                <a href="#room-slider" class="mega-link">Lake View Suite</a>
+              </div>
+              <div class="mega-col">
+                <div class="mega-title">Aile</div>
+                <a href="#room-slider" class="mega-link">Aile Odası</a>
+                <a href="#room-slider" class="mega-link">Bağlantılı Odalar</a>
+              </div>
+              <div class="mega-col highlight">
+                <div class="mega-title">Öne Çıkan</div>
+                <p class="mega-text">Göl manzaralı odalarda kahvaltı dahil ayrıcalıklı konaklama.</p>
+                <a class="btn-cta small" href="https://wa.me/905310000000" target="_blank">Rezervasyon</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3c-3.866 0-7 2.239-7 5c0 1.657 1.343 3 3 3h8c1.657 0 3-1.343 3-3c0-2.761-3.134-5-7-5zm-6 9v2a6 6 0 0 0 12 0v-2H6z"/></svg>
+              <span>Yeme & İçme</span>
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg>
+            </button>
+            <div class="dropdown-panel" role="menu">
+              <a href="index.html#kahvalti" class="dropdown-link">Kahvaltılıklar</a>
+              <a href="index.html#ana-yemekler" class="dropdown-link">Ana Yemekler</a>
+              <a href="index.html#salatalar" class="dropdown-link">Salatalar</a>
+              <a href="index.html#icecekler" class="dropdown-link">İçecekler</a>
+              <a href="index.html#tatlilar" class="dropdown-link">Tatlılar</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l2.39 4.84L20 8l-4 3.9L17 18l-5-2.6L7 18l1-6.1L4 8l5.61-1.16z"/></svg>
+              <span>Deneyimler</span>
+              <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m7 10l5 5l5-5z"/></svg>
+            </button>
+            <div class="dropdown-panel" role="menu">
+              <a href="#garden-slider" class="dropdown-link">Bahçe & Doğa</a>
+              <a href="#genel" class="dropdown-link">Otel Genel</a>
+              <a href="#room-slider" class="dropdown-link">Odalar</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#iletisim">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C11.85 21 3 12.15 3 1a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.19 2.47.57 3.58a1 1 0 0 1-.24 1.01z"/></svg>
+              <span>İletişim</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn-cta" href="https://wa.me/905310000000" target="_blank">Rezervasyon</a>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <h1 style="text-align:center; margin-top:1.2em; font-size:2.1em; font-family:'Montserrat',sans-serif; letter-spacing:0.04em;">Flora İznik Hotels & Suites</h1>
@@ -104,9 +184,9 @@
     </section>
     <section class="map-card">
       <span class="icon">📍</span>
-      <a href="https://www.google.com/maps/dir//Selcuk+Mah.+Ds%C4%B1+Sokak+No:2,+Sel%C3%A7uk,+%C4%B0znik+Yeni%C5%9Fehir+Yolu+No:60,+16860+%C4%B0zni%CC%87k%2FBursa/@40.4061558,29.6202831,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14cb0a23eed65b4d:0x7a6a3e0eeb45f58f!2m2!1d29.702684!2d40.406185?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps'te Görüntüle</a>
+      <a href="https://www.google.com/maps/dir//Selcuk+Mah.+Ds%C4%B1+Sokak+No:2,+Selçuk,+İznik+Yenişehir+Yolu+No:60,+16860+İzni̇k/Bursa/@40.4061558,29.6202831,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14cb0a23eed65b4d:0x7a6a3e0eeb45f58f!2m2!1d29.702684!2d40.406185?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps'te Görüntüle</a>
     </section>
-    <section class="contact-card">
+    <section class="contact-card" id="iletisim">
       <ul>
         <li><span class="icon">📞</span> <b>Telefon:</b> <a href="tel:+905310000000">+90 531 000 00 00</a></li>
         <li><span class="icon"><svg width="22" height="22" viewBox="0 0 32 32"><g><path fill="#25D366" d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.1 2.36 7.1L4 29l7.13-2.32A12.94 12.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.98 0-3.85-.58-5.41-1.58l-.39-.25-4.23 1.38 1.38-4.13-.25-.4A9.94 9.94 0 0 1 6 15c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.18.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.36-.01-.56-.01-.2 0-.52.07-.8.36-.28.28-1.06 1.04-1.06 2.54 0 1.5 1.09 2.95 1.24 3.16.15.21 2.15 3.29 5.22 4.48.73.31 1.3.5 1.75.64.74.24 1.41.21 1.94.13.59-.09 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.18-.53-.32z"/></g></svg></span> <b>WhatsApp:</b> <a href="https://wa.me/905310000000" target="_blank">+90 531 000 00 00</a></li>
